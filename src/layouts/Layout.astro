@@ -1,22 +1,52 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+export interface Props {
+  title?: string;
+}
+const { title = "youruikit Docs" } = Astro.props;
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} • Vyoma Labs</title>
+
+  <link rel="stylesheet" href="/src/styles/global.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-light">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>youruikit</strong>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs">Docs</a>
+        <a class="navbar-item" href="https://www.npmjs.com/package/youruikit">npm</a>
+        <a class="navbar-item" href="https://github.com/psjdeveloper/youruikit">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <section class="section">
+    <div class="container">
+      <slot />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        © Vyoma Labs — youruikit
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

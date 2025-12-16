@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Button">
+  <h1 class="title">Button</h1>
+
+  <div class="content">
+    <p>
+      Buttons are used to trigger actions such as submitting forms or opening dialogs.
+    </p>
+
+    <h2>Usage</h2>
+
+    <pre><code>
+{`import { Button } from "youruikit";
+
+<Button>Click me</Button>`}
+    </code></pre>
+
+    <h2>Props</h2>
+
+    <table class="table is-fullwidth">
+      <thead>
+        <tr>
+          <th>Prop</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>children</td>
+          <td>ReactNode</td>
+          <td>Button content</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>boolean</td>
+          <td>Disable the button</td>
+        </tr>
+        <tr>
+          <td>className</td>
+          <td>string</td>
+          <td>Custom styles</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Layout>

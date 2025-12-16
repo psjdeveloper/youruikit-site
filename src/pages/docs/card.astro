@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Card">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Card</h1>
+
+      <div class="content">
+        <p>
+          Cards are used to group related content in a clean container.
+        </p>
+
+        <h2>Usage</h2>
+
+        <pre><code>
+{`import { Card } from "youruikit";`}
+
+&lt;Card&gt;
+  &lt;h3&gt;Card Title&lt;/h3&gt;
+  &lt;p&gt;This is card content&lt;/p&gt;
+&lt;/Card&gt;
+        </code></pre>
+
+        <h2>Props</h2>
+
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>children</td>
+              <td>ReactNode</td>
+              <td>Card content</td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>Custom styles</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</Layout>

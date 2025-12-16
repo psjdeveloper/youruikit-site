@@ -1,0 +1,6 @@
+@import "bulma/css/bulma.min.css";
+
+/* Custom tweaks */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}

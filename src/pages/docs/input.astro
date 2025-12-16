@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Input">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Input</h1>
+
+      <div class="content">
+        <p>
+          Inputs allow users to enter text and data in forms.
+        </p>
+
+        <h2>Usage</h2>
+
+        <pre><code>
+{`import { Input } from "youruikit";`}
+
+&lt;Input placeholder="Enter your name" /&gt;
+        </code></pre>
+
+        <h2>Props</h2>
+
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>Input value</td>
+            </tr>
+            <tr>
+              <td>onChange</td>
+              <td>function</td>
+              <td>Change handler</td>
+            </tr>
+            <tr>
+              <td>placeholder</td>
+              <td>string</td>
+              <td>Placeholder text</td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>Custom styles</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</Layout>
